@@ -44,7 +44,7 @@ weapons: [{
     reload: 666666
     bullet: {
         shootOnDeath: true
-        spawnUnit: sd-eradicator;
+        spawnUnit: sd-eradicator
     }
 }
 {
