@@ -6,11 +6,6 @@ hitSize: 30
 speed: 0.4
 rotateSpeed: 1.65
 createWreck: true
-abilities: [{
-    type: SpawnDeathAbility
-    unit: eradicator
-    amount: 1
-}]
 
 weapons: [{
     name: not-reign-weapon
@@ -40,7 +35,10 @@ weapons: [{
 {
     display: false
     name: fake-weapon-1
-    shoot.firstShotDelay: 666666
+    shoot: {
+        type: ShootPattern
+        firstShotDelay: 666666
+    }
     reload: 666666
     bullet: {
         shootOnDeath: true
@@ -50,7 +48,7 @@ weapons: [{
 {
     display: false
     name: fake-weapon-2
-    reload: 0
+    reload: 666666
     alwaysShooting: true
     shootStatus: sd-death-mark
     shootStatusDuration: 666666f
