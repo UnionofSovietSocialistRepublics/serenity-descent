@@ -6,6 +6,7 @@ hitSize: 30
 speed: 0.4
 rotateSpeed: 1.65
 createWreck: true
+itemCapacity: 100
 
 weapons: [{
     name: not-reign-weapon
@@ -35,11 +36,9 @@ weapons: [{
 {
     display: false
     name: fake-weapon-1
-    shoot: {
-        type: ShootPattern
-        firstShotDelay: 666666
-    }
     reload: 666666
+    controllable: false
+    aiControllable: false
     bullet: {
         shootOnDeath: true
         spawnUnit: sd-eradicator
