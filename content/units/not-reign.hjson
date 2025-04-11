@@ -50,12 +50,12 @@ weapons: [{
 {
     display: false
     name: fake-weapon-2
-    reload = 0
+    reload: 0
     alwaysShooting: true
     shootStatus: sd-death-mark
-    shootStatusDuration: 666666f;
-    shootSound: none;
-    ejectEffect: none;
+    shootStatusDuration: 666666f
+    shootSound: none
+    ejectEffect: none
     bullet: {
         rangeOverride: 0
         instantDisappear: true

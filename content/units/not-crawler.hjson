@@ -39,9 +39,9 @@ weapons: [{
     bullet: {
         type: ExplosionBulletType
         shootOnDeath: true
-        killShooter = true;
-        hittable = false;
-        collidesAir = true;
+        killShooter: true
+        hittable: false
+        collidesAir: true
         splashDamage: 80
         splashDamageRadius: 144
         rangeOverride: 25
