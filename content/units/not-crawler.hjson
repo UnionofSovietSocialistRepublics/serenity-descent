@@ -1,7 +1,7 @@
 type: mech
 template: SerpuloUnitType
 health: 2250
-speed: 0.85
+speed: 1
 hitSize: 8
 rotateSpeed: 5
 createScorch: false
@@ -9,29 +9,43 @@ drawMinimap: false
 targetable: false
 deathSound: impacted
 deathSoundVolume: 1
-weapons: [
-  {
-    mirror: false
+weapons: [{
+    display: false
     range: 40
     shootSound: none
     shootCone: 360
     reload: 24
     bullet: {
-      type: ExplosionBulletType
-      shootOnDeath: true
-      killShooter: true
-      splashDamage: 2400
-      splashDamageRadius: 144
-      status: corroded
-      statusDuration: 1200
-      fragBullets: 10
-      fragBullet: {
-        type: LightningBulletType
-        damage: 120
-        lightningLength: 20
-        lightningColor: be93ce
-      }
+        type: ExplosionBulletType
+        shootOnDeath: true
+        killShooter: true
+        splashDamage: 2400
+        splashDamageRadius: 144
+        status: corroded
+        statusDuration: 1200
+        fragBullets: 10
+        fragBullet: {
+            type: LightningBulletType
+            damage: 120
+            lightningLength: 20
+            lightningColor: be93ce
+        }
     }
-  }
-]
+}
+{
+    shootSound: none
+    shootCone: 360
+    reload: 24
+    bullet: {
+        type: ExplosionBulletType
+        shootOnDeath: true
+        killShooter = true;
+        hittable = false;
+        collidesAir = true;
+        splashDamage: 80
+        splashDamageRadius: 144
+        rangeOverride: 25
+        instantDisappear: true
+    }
+}]
         

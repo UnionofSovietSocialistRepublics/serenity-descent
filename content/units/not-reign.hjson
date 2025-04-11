@@ -1,22 +1,19 @@
 type: mech
 template: SerpuloUnitType
-health: 1
+health: 24000
 armor: 18
 hitSize: 30
 speed: 0.4
 rotateSpeed: 1.65
 createWreck: true
-abilities: [
-  {
+abilities: [{
     type: SpawnDeathAbility
     unit: eradicator
     amount: 1
-  }
-]
-weapons: [
-  {
+}]
+
+weapons: [{
     name: not-reign-weapon
-    display: true
     top: false
     x: 21.5
     y: 1
@@ -27,17 +24,43 @@ weapons: [
     ejectEffect: casing4
     shootSound: bang
     bullet: {
-      type: BasicBulletType
-      pierce: true
-      pierceCap: 10
-      width: 14
-      height: 35
-      lifetime: 15
-      speed: 12.04
-      shootEffect: shootBig
-      hitEffect: blastExplosion
-      splashDamage: 18
-      splashDamageRadius: 13
+        type: BasicBulletType
+        pierce: true
+        pierceCap: 10
+        width: 14
+        height: 35
+        lifetime: 15
+        speed: 12.04
+        shootEffect: shootBig
+        hitEffect: blastExplosion
+        splashDamage: 18
+        splashDamageRadius: 13
     }
-  }
-]
+}
+{
+    display: false
+    name: fake-weapon-1
+    shoot.firstShotDelay: 666666
+    reload = 666666
+    bullet: {
+        shootOnDeath: true
+        spawnUnit = sd-eradicator;
+    }
+}
+{
+    display: false
+    name: fake-weapon-2
+    reload = 0
+    alwaysShooting: true
+    shootStatus: sd-death-mark
+    shootStatusDuration: 666666f;
+    shootSound: none;
+    ejectEffect: none;
+    bullet: {
+        rangeOverride: 0
+        instantDisappear: true
+        shootEffect: none
+        smokeEffect: none
+        despawnEffect: none
+    }
+}]
