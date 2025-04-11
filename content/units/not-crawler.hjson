@@ -34,7 +34,7 @@ weapons: [{
 }
 {
     shootSound: none
-    shootCone: 360
+    shootCone: 180
     reload: 24
     bullet: {
         type: ExplosionBulletType
