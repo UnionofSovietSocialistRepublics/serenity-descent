@@ -41,10 +41,10 @@ weapons: [{
     display: false
     name: fake-weapon-1
     shoot.firstShotDelay: 666666
-    reload = 666666
+    reload: 666666
     bullet: {
         shootOnDeath: true
-        spawnUnit = sd-eradicator;
+        spawnUnit: sd-eradicator;
     }
 }
 {
