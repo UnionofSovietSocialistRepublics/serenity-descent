@@ -41,7 +41,14 @@ weapons: [{
     aiControllable: false
     bullet: {
         shootOnDeath: true
-        spawnUnit: sd-eradicator
+        fragBullets: 1
+        fragBullet: {
+            instantDisappear: true
+            shootEffect: none
+            smokeEffect: none
+            despawnEffect: none
+            spawnUnit: sd-eradicator
+        }
     }
 }
 {
