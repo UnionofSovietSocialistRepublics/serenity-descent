@@ -39,9 +39,9 @@ weapons: [{
     reload: 666666
     controllable: false
     aiControllable: false
+    shootOnDeath: true
     bullet: {
         type: BasicBulletType
-        shootOnDeath: true
         speed: 0
         lifetime: 1
         fragBullets: 1

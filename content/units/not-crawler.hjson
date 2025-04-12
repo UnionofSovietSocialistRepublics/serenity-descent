@@ -15,9 +15,9 @@ weapons: [{
     shootSound: none
     shootCone: 360
     reload: 24
+    shootOnDeath: true
     bullet: {
         type: ExplosionBulletType
-        shootOnDeath: true
         killShooter: true
         splashDamage: 2400
         splashDamageRadius: 144
@@ -35,10 +35,10 @@ weapons: [{
 {
     shootSound: none
     shootCone: 180
+    shootOnDeath: true
     reload: 24
     bullet: {
         type: ExplosionBulletType
-        shootOnDeath: true
         killShooter: true
         hittable: false
         collidesAir: true
