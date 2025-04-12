@@ -43,6 +43,7 @@ weapons: [{
         type: ExplosionBulletType
         rangeOverride: 0
         killShooter: true
+        shootOnDeath: true
         fragBullets: 10
         fragBullet: {
             spawnUnit: sd-eradicator
