@@ -40,14 +40,18 @@ weapons: [{
     controllable: false
     aiControllable: false
     bullet: {
+        type: BasicBulletType
         shootOnDeath: true
+        speed: 0
+        lifetime: 1
         fragBullets: 1
         fragBullet: {
-            instantDisappear: true
+            speed: 0
+            lifetime: 1
+            spawnUnit: sd-eradicator
             shootEffect: none
             smokeEffect: none
             despawnEffect: none
-            spawnUnit: sd-eradicator
         }
     }
 }
