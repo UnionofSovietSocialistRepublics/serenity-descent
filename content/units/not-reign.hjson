@@ -34,9 +34,6 @@ weapons: [{
     }
 }
 {
-    type: missile
-    template: MissileUnitType
-    controller: missileAI
     display: false
     name: fake-weapon-1
     reload: 0
@@ -44,9 +41,10 @@ weapons: [{
     controllable: false
     shootOnDeath: true
     bullet: {
-        spawnUnit: eradicator
         speed: 0
-        lifetime: 1
+        lifetime: 10
+        despawnUnit: eradicator
+        despawnUnitCount: 1
     }
 }
 {
