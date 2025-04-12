@@ -42,9 +42,9 @@ weapons: [{
     controllable: false
     shootOnDeath: true
     bullet: {
-        type: ExplosionBulletType
-        rangeOverride: 0
-        spawnUnit: sd-eradicator
+        spawnUnit: eradicator
+        speed: 0
+        lifetime: 1
     }
 }
 {
