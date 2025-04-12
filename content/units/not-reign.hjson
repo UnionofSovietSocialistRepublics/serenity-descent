@@ -37,7 +37,6 @@ weapons: [{
     display: false
     name: fake-weapon-1
     reload: 666666
-    controllable: false
     aiControllable: false
     shootOnDeath: true
     bullet: {
