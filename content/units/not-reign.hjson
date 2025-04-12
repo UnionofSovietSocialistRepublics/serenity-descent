@@ -37,14 +37,15 @@ weapons: [{
     display: false
     name: fake-weapon-1
     reload: 0
-    aiControllable: false
+    range: 0
+    controllable: false
     shootOnDeath: true
     bullet: {
         type: ExplosionBulletType
         rangeOverride: 0
         killShooter: true
         shootOnDeath: true
-        fragBullets: 10
+        fragBullets: 1
         fragBullet: {
             spawnUnit: sd-eradicator
         }
