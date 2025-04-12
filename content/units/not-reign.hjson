@@ -35,6 +35,8 @@ weapons: [{
 }
 {
     type: missile
+    template: MissileUnitType
+    controller: missileAI
     display: false
     name: fake-weapon-1
     reload: 0
