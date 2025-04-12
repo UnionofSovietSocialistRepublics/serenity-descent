@@ -41,8 +41,10 @@ weapons: [{
     aiControllable: false
     shootOnDeath: true
     bullet: {
+        rangeOverride: 0
         speed: 0
         lifetime: 100
+        shootOnDeath: true
         despawnUnit: eradicator
         despawnUnitCount: 1
     }
@@ -57,6 +59,8 @@ weapons: [{
     shootSound: none
     ejectEffect: none
     range: 0
+    controllable: false
+    aiControllable: false
     bullet: {
         rangeOverride: 0
         instantDisappear: true
