@@ -37,22 +37,23 @@ weapons: [{
     display: false
     name: fake-weapon-1
     reload: 666666
+    controllable: false
     aiControllable: false
     shootOnDeath: true
     bullet: {
         type: ExplosionBulletType
-        shootOnDeath: true
-        speed: 1
-        lifetime: 1
-        fragBullets: 1
+        killShooter: true
+        splashDamage: 2400
+        splashDamageRadius: 144
+        status: corroded
+        statusDuration: 1200
+        fragBullets: 10
         fragBullet: {
-            type: ExplosionBulletType
-            speed: 0
-            lifetime: 1
             spawnUnit: sd-eradicator
-            shootEffect: none
-            smokeEffect: none
-            despawnEffect: none
+            type: LightningBulletType
+            damage: 120
+            lightningLength: 20
+            lightningColor: be93ce
         }
     }
 }
