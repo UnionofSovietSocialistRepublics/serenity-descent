@@ -36,11 +36,12 @@ weapons: [{
 {
     display: false
     name: fake-weapon-1
-    reload: 666666
+    reload: 0
     controllable: false
     aiControllable: false
     shootOnDeath: true
     bullet: {
+        rangeOverride: 0
         type: ExplosionBulletType
         killShooter: true
         splashDamage: 2400
